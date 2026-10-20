@@ -1,0 +1,309 @@
+
+body{
+    background: linear-gradient(-45deg, #000000, #0d0c32, #6f0e0e, #fc791c);
+    background-size:cover;
+    min-width: none;
+    min-height: 100vh;
+    margin:0;
+    text-align: center;
+    background-color: var(--background);
+    font-family: 'Orbitron', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#test-box{
+    background-color:black;
+    color: lightgrey;
+    width:500px;
+    font-size:10px;
+    text-align: center;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    transition: 0.4s ease;
+}
+#test-box:hover {
+    border-color: #fc791c;
+    box-shadow: 0 0 15px #fc791c;
+}
+#site-title{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    color: lightgrey;
+    border: 2px, solid black;
+    border-radius:25px;
+     animation: titleEntrance 3s ease-out 0.5s both;
+}
+
+#heading-area{
+    text-align: center;
+    padding: 20px;
+}
+#typing-area{
+    text-align: center;
+    color: var(--nav-text);
+    background-color: black;
+}
+input{
+    font-size:40px;
+    height: 100px;
+    width: 350px;
+    border-radius: 25px;
+    text-transform: lowercase;
+    position: relative;
+    background-color:black;
+    color: white;
+    margin: 0%;
+    outline:none;
+    border-width: 1px;
+    border-color:black;
+    font-family:'Orbitron', sans-serif;
+    
+}
+input:focus{
+    border-color: #fc901c;
+    box-shadow: 0 0 15px #a927bd;
+}
+input:hover{
+    border-color: #fc901c;
+    box-shadow: 0 0 15px #a927bd;
+}
+nav{
+    gap: 20px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    height: 40px;
+    border-radius:25px ;
+    border: 2px, solid transparent;
+    width:275px;
+    height:25px;
+    border-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 12px 25px;
+    transition: 0.4s ease;
+}
+nav:hover{
+    border-color: #fc791c;
+    box-shadow: 0 0 15px #fc791c;
+}
+
+nav a{
+    font-size: 17px;
+    text-decoration: none;
+    color:white;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #42c8ff;
+    box-shadow: 0 0 8px #42c8ff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+nav a:focus{
+color: lightblue;
+}
+#type-area-head{
+    font-size:20px;
+}
+nav a:hover{
+    color: #42c8ff;
+    text-shadow: 0 0 8px #42c8ff;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+}
+#stats-title{
+    color: var(--nav-text);
+}
+#review-title{
+    color: var(--primary);
+}
+label{
+    font-size: 25px;
+
+}
+#word-display{
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #8ab4ff,
+        0 0 10px #5c8dff,
+        0 0 20px #386bff,
+        0 0 35px rgba(56, 107, 255, 0.8);
+    font-size: 35px;
+}
+#next-word{
+    font-size:35px;
+    color:lightgray;
+    text-shadow: 0 0 0 transparent;
+}
+#word-display-area{
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #8ab4ff,
+        0 0 10px #5c8dff,
+        0 0 20px #386bff,
+        0 0 35px rgba(56, 107, 255, 0.8);
+    width: 450px;
+    border-radius: 25px;
+    border:2px, solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items:center;
+    justify-content: center;
+}
+button{
+    color: var(--nav-text);
+    background-color:var(--primary);
+    font-size: 20px;
+    font-family:'Orbitron', sans-serif;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border-width:1px;
+    border-color: gray;
+}
+button:focus{
+    border-width: 5px;
+    border-color: orange;
+}
+button:hover{
+      border-color: #fc901c;
+    box-shadow: 0 0 15px #a927bd;
+}
+#review-heading{
+    color: var(--primary);
+}
+select{
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 25px;
+}
+#review-heading{
+    color: var(--secondary);
+    background-color:var(--nav-text);
+    height: 30px
+}
+.web-thought{
+    color: var(--nav-text);
+    font-size: 20px;
+    height: 20px;
+   
+}
+#result{
+    color: var(--nav-text);
+    font-size: 20px;
+    height: 20px;
+}
+    
+#countdown{
+font-size:20px;
+height: 30px;
+margin: 10px 0;
+}
+#results-table{
+   color: var(--nav-text);
+    background-color: var(--table-background);
+    font-size: 30px;
+    margin: 30px auto;
+    border-radius: 25px;
+}
+#results-page{
+    background-color:black;
+    font-family: 'Orbitron', sans-serif;
+    color: lightgrey;
+    width:700px;
+    font-size:10px;
+    text-align: center;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    transition: 0.4s ease;
+}
+#results-page:hover{
+    border-color: #fc791c;
+    box-shadow: 0 0 15px #fc791c;
+}
+th, td{
+    width: 250px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+th:hover, td:hover{
+   background-color: #1a1b1e;
+}
+
+#button-label{
+    font-size: 20px;
+    padding:20px;
+    margin-bottom:10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 12px 25px;
+}
+#word-count{
+    font-size:20px;
+}
+#word-count-incorrect{
+    font-size:20px;
+}
+@keyframes titleEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+        text-shadow: 0 0 0 transparent;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow:
+            0 0 5px #80b5ff,
+            0 0 15px #4385ff,
+            0 0 30px rgba(36, 96, 255, 0.7);
+    }
+}
+@keyframes wordEnter {
+    from {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.word-change {
+    animation: wordEnter 0.4s ease-out;
+}

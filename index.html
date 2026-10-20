@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>KeySprint</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <nav>
+        <a href="index.html" id="index-nav">Key Sprint</a>
+            <a href="results.html" id="results-nav">Results</a>
+        </nav>
+    <div id="test-box">
+        <div id="heading-area">
+            <h1 id="site-title">Key Sprint</h1>
+            <br>
+        <main>
+        <div id="typing-area">
+            <h2 id="type-area-head">Type in the box below</h2>
+            <div id="word-display-area">
+            <span id="word-display"></span>
+            <span id="next-word"></span>
+            </div>
+            <br>
+            <input 
+            name="typingarea"
+            type="text" 
+            id="typing-input" 
+            placeholder="start typing..."
+            autocorrect="off"
+            spellcheck="false">
+            <br>
+            <p id="result"></p>
+            <p  id="countdown"></p>
+            <br>
+            <p for="typingarea" id="button-label">Press the Button to start the Timer!</ps>
+            <div id="start-button" class="countdown">
+            <br>
+            <button id="start-15" value="15" class="timer">15s</button>
+            <button id="start-30" value="30" class="timer">30s</button>
+            <button id="start-60" value="60" class="timer">60s</button>
+            <br>
+            <br>
+            <p id="word-count">Words Correct: 0</p>
+            <p id="word-count-incorrect">Incorrect Words: 0</p>
+            </div>
+        </div>
+        
+    </div>
+        </main>
+        <script src="functions.js"></script>
+    </body>
+    
+</html>
