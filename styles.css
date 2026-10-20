@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity:87%;
 }
 #test-box{
     background-color:black;
