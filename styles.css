@@ -6,7 +6,6 @@ body{
     min-height: 100vh;
     margin:0;
     text-align: center;
-    background-color: var(--background);
     font-family: 'Orbitron', sans-serif;
     display:flex;
     flex-direction: column;
@@ -14,8 +13,13 @@ body{
     align-items: center;
     opacity:87%;
 }
+
 #test-box{
-    background-color:black;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
     color: lightgrey;
     width:500px;
     font-size:10px;
@@ -38,9 +42,10 @@ body{
     font-weight: 900;
     font-size: 42px;
     color: lightgrey;
-    border: 2px, solid black;
+    opacity: 100%;
+    border: 2px, solid transparent;
     border-radius:25px;
-     animation: titleEntrance 3s ease-out 0.5s both;
+    animation: titleEntrance 3s ease-out 0.5s both;
 }
 
 #heading-area{
@@ -49,8 +54,7 @@ body{
 }
 #typing-area{
     text-align: center;
-    color: var(--nav-text);
-    background-color: black;
+
 }
 input{
     font-size:40px;
@@ -59,15 +63,18 @@ input{
     border-radius: 25px;
     text-transform: lowercase;
     position: relative;
-    background-color:black;
-    color: white;
+    color: rgb(53, 46, 62);
     margin: 0%;
     outline:none;
     border-width: 1px;
-    border-color:black;
     font-family:'Orbitron', sans-serif;
-    
+    background: rgba(255, 255, 255, 0.1);
+  border: 1px transparent;
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
+
 input:focus{
     border-color: #fc901c;
     box-shadow: 0 0 15px #a927bd;
@@ -78,25 +85,22 @@ input:hover{
 }
 nav{
     gap: 20px;
-    font-size: 8px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
-    background-color:black;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     height: 40px;
     border-radius:25px ;
     border: 2px, solid transparent;
     width:275px;
     height:25px;
-    border-color: #000000;
     margin-top: 20px;
     margin-bottom: 50px;
     padding: 12px 25px;
     transition: 0.4s ease;
 }
-nav:hover{
-    border-color: #fc791c;
-    box-shadow: 0 0 15px #fc791c;
-}
+
 
 nav a{
     font-size: 17px;
@@ -168,7 +172,7 @@ label{
         0 0 35px rgba(56, 107, 255, 0.8);
     width: 450px;
     border-radius: 25px;
-    border:2px, solid black;
+    border:2px, transparent;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -226,14 +230,20 @@ height: 30px;
 margin: 10px 0;
 }
 #results-table{
-   color: var(--nav-text);
-    background-color: var(--table-background);
+    color: var(--nav-text);
+    background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
     font-size: 30px;
-    margin: 30px auto;
-    border-radius: 25px;
+    border-radius: 40px;
+    min-height: 60vh;
 }
 #results-page{
-    background-color:black;
+     border: 1px transparent;
+   backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
     font-family: 'Orbitron', sans-serif;
     color: lightgrey;
     width:700px;
@@ -255,13 +265,17 @@ margin: 10px 0;
 th, td{
     width: 250px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
+     border: 1px transparent;
+    border-radius: 20px;
     color: white;
-    border: 2px solid black;
+    border: 2px, transparent;
     border-radius: 15px;
 }
 th:hover, td:hover{
-   background-color: #1a1b1e;
+    border: 1px transparent;
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 #button-label{
